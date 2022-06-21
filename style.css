@@ -1,0 +1,135 @@
+:root {
+  --primary: #0f0e17;
+  --secondary: #f25f4c;
+  --light: #fffffe;
+  --orange: #ff8906;
+  --gray: #a7a9be;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--light);
+  text-align: center;
+}
+
+.container {
+  display: inline-flex;
+  margin-top: 10%;
+}
+
+.calculadora {
+  background-color: var(--secondary);
+  border: 1px solid var(--light);
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-areas:
+    "result result result result"
+    "ac ce percentage div"
+    "seven eigth nine multi"
+    "four five six min"
+    "one two three plus"
+    "ze po equal plus";
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: stretch;
+  box-shadow: 5px 5px 16px 0px #ff8b06a4;
+}
+
+.valor {
+  background-color: #a7a9be;
+  width: 95%;
+  padding: 0.4rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px 1px #0f0e1771 inset;
+  text-align: start;
+}
+
+.btn {
+  border: none;
+  background-color: var(--orange);
+  padding: 0.8rem;
+  border-radius: 5px;
+  width: 40px;
+  border: #0f0e17 1px solid;
+  box-shadow: #0f0e17 2px 1px 1px;
+  cursor: pointer;
+}
+
+.btn-plus {
+  height: 94px;
+}
+
+#result {
+  grid-area: result;
+}
+#ac {
+  grid-area: ac;
+}
+#ce {
+  grid-area: ce;
+}
+#percentage {
+  grid-area: percentage;
+}
+#division {
+  grid-area: div;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eigth;
+}
+#nine {
+  grid-area: nine;
+}
+
+#multiply {
+  grid-area: multi;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#minus {
+  grid-area: min;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#plus {
+  grid-area: plus;
+}
+#zero {
+  grid-area: ze;
+}
+#point {
+  grid-area: po;
+}
+#equal {
+  grid-area: equal;
+}
